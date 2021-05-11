@@ -3,9 +3,9 @@
 .app {
   align-items: center;
   display: flex;
-  height: 100vh;
   flex-wrap: wrap;
+  font-family: 'Archivo Black', sans-serif;
+  height: 100vh;
   justify-content: center;
   width: 100vw;
-  font-family: 'Archivo Black', sans-serif;
 }
