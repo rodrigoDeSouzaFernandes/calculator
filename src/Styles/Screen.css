@@ -1,6 +1,6 @@
 .screen {
   align-items: center;
-  background-color: white;
+  background-color: rgb(66, 66, 66);
   border-radius: 5px;
   display: flex;
   font-size: 30px;
@@ -9,4 +9,19 @@
   margin: 30px 0;
   padding: 20px;
   width: 90%;
+  flex-direction: column;
+}
+
+.screen .up {
+  height: 50%;
+  width: 100%;
+  font-size: 35px;
+  color: white;
+}
+.screen .down {
+  height: 50%;
+  width: 100%;
+  text-align: end;
+  color: rgb(145, 145, 145);
+  font-size: 25px;
 }

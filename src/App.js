@@ -1,14 +1,17 @@
 import React from 'react';
 
+import Provider from './context/Provider';
 import Calculator from '../src/Components/Calculator'
 
 import "../src/App.css"
 
 function App() {
   return (
-    <div className="app">
-      <Calculator />
-    </div>
+    <Provider>
+      <div className="app">
+        <Calculator />
+      </div>
+    </Provider>
   );
 }
 
