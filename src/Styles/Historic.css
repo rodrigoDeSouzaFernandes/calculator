@@ -1,0 +1,38 @@
+.hist-body {
+  align-items: center;
+  background-color: rgb(80, 80, 80);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgb(133, 133, 133);
+  display: flex;
+  flex-direction: column;
+  height: 560px;
+  margin: 5px;
+  padding: 20px 10px;
+  min-width: 350px;
+  color: rgb(175, 175, 175);
+  justify-content: space-between;
+}
+
+.hist-body .list {
+  display: flex;
+  flex-direction: column-reverse;
+  list-style: none;
+  line-height: 40px;
+  margin: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.hist-body .list li:first-child {
+  color: white;
+  font-size: 30px;
+  margin: 20px 0 0;
+}
+
+.hist-body h2 {
+  color: white;
+  text-shadow: black 1px 1px 5px;
+  font-weight: 100;
+}
+

@@ -5,10 +5,11 @@ import CalcContext from './CalcContext';
 function Provider({children}) {
 
   const [exp, setExp] = useState('')
+  const [hist, setHist] = useState([])
 
   const renderResult = (string) => {
     if(string[string.length-1] <= 9) {
-      return eval(string)
+      return Math.round(eval(string)*100)/100
     }  
     else {
       return ''
@@ -19,6 +20,8 @@ function Provider({children}) {
     exp,
     setExp,
     renderResult,
+    hist,
+    setHist,
   };
 
   return (

@@ -5,7 +5,8 @@ import '../Styles/Buttons.css'
 
 function Buttons() {
 
-  const { exp, setExp, renderResult } = useContext(CalcContext)
+  const { exp, setExp, renderResult,
+    hist, setHist } = useContext(CalcContext)
 
   const addToExp = (item) => {
     exp.length < 12 
@@ -14,7 +15,10 @@ function Buttons() {
   }
 
   const functionGuide = {
-    "=": () => setExp(`${renderResult(exp)}`),
+    "=": () => {
+      setHist([`${exp} = ${renderResult(exp)}`, ...hist]);
+      setExp(`${renderResult(exp)}`);
+  },
     C: () => setExp(""),
     "⌫": () => setExp(exp.slice(0, exp.length -1)),
     "^": () => addToExp( "**" ),
